@@ -46,13 +46,21 @@ USB-C 充电器的功率协商是静默完成的 — 你无法直观地知道 Ma
 
 ## 安装
 
+### 一键安装（复制粘贴即可）
+
+```bash
+mkdir -p ~/.local/bin && curl -fsSL -o ~/.local/bin/charger-watt https://raw.githubusercontent.com/xyb/charger-watt/main/charger_watt.py && python3 ~/.local/bin/charger-watt --install
+```
+
+### 或克隆后安装
+
 ```bash
 git clone https://github.com/xyb/charger-watt.git
 cd charger-watt
 python3 charger_watt.py --install
 ```
 
-首次运行时，`--install` 会自动创建 "Charger Watt" 快捷指令并打开快捷指令 app 让你确认导入。导入后再次运行 `--install` 即可完成安装。
+首次运行时，`--install` 会自动创建 "Charger Watt" 快捷指令并打开快捷指令 app 让你确认导入。导入后再次运行安装命令即可完成安装。
 
 安装完成后，监控立即生效，每次登录自动启动。
 

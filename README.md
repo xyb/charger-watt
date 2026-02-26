@@ -46,13 +46,21 @@ Event-driven via IOKit — **zero polling**, zero CPU when idle.
 
 ## Installation
 
+### One-liner (copy & paste)
+
+```bash
+mkdir -p ~/.local/bin && curl -fsSL -o ~/.local/bin/charger-watt https://raw.githubusercontent.com/xyb/charger-watt/main/charger_watt.py && python3 ~/.local/bin/charger-watt --install
+```
+
+### Or clone and install
+
 ```bash
 git clone https://github.com/xyb/charger-watt.git
 cd charger-watt
 python3 charger_watt.py --install
 ```
 
-On first run, `--install` will automatically create the "Charger Watt" shortcut and open the Shortcuts app for you to accept the import. After accepting, run `--install` again to complete the setup.
+On first run, `--install` will automatically create the "Charger Watt" shortcut and open the Shortcuts app for you to accept the import. After accepting, run the install command again to complete the setup.
 
 That's it — the monitor starts immediately and auto-starts on every login.
 
